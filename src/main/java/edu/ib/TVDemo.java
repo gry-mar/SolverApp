@@ -17,8 +17,8 @@ public class TVDemo extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-        Parent root= FXMLLoader.load(getClass().getResource("/fxml/tvdemo.fxml"));
-        Scene scene= new Scene(root,800,600);
+        Parent root= FXMLLoader.load(getClass().getResource("/fxml/welcometoapp.fxml"));
+        Scene scene= new Scene(root,600,400);
         primaryStage.setScene(scene);
         primaryStage.show();
 

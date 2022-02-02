@@ -94,7 +94,8 @@ import java.util.ResourceBundle;
         void btnCalculateEulerClicked(ActionEvent event) {
             table.getItems().clear(); // remove all previous values
 
-            if(!(tfMin.getText().isEmpty()) && !(tfMax.getText().isEmpty()) && !(tfH.getText().isEmpty()) &&!(tfXZero.getText().isEmpty())&&!(tfEquation.getText().isEmpty())){
+            if(!(tfMin.getText().isEmpty()) && !(tfMax.getText().isEmpty()) && !(tfH.getText().isEmpty())
+                    &&!(tfXZero.getText().isEmpty())&&!(tfEquation.getText().isEmpty())){
                 tvError.setText("");
                 double a=Double.parseDouble(changeComma(tfMin.getText().toString()));
                 double b=Double.parseDouble(changeComma(tfMax.getText().toString()));
@@ -111,6 +112,7 @@ import java.util.ResourceBundle;
             tvFinalResult.setText(value);}
             else{
                 tvError.setText("Please enter all parameters");
+                tvFinalResult.setText("");
             }
         }
 
@@ -118,7 +120,8 @@ import java.util.ResourceBundle;
         void btnCalculateEulerModifiedClicked(ActionEvent event) {
             table.getItems().clear(); // remove all previous values
 
-            if(!(tfMin.getText().isEmpty()) && !(tfMax.getText().isEmpty()) && !(tfH.getText().isEmpty()) &&!(tfXZero.getText().isEmpty())&&!(tfEquation.getText().isEmpty())){
+            if(!(tfMin.getText().isEmpty()) && !(tfMax.getText().isEmpty()) && !(tfH.getText().isEmpty())
+                    &&!(tfXZero.getText().isEmpty())&&!(tfEquation.getText().isEmpty())){
                 tvError.setText("");
                 double a=Double.parseDouble(changeComma(tfMin.getText().toString()));
                 double b=Double.parseDouble(changeComma(tfMax.getText().toString()));
@@ -135,6 +138,7 @@ import java.util.ResourceBundle;
             tvFinalResult.setText(value);}
             else{
                 tvError.setText("Please enter all parameters");
+                tvFinalResult.setText("");
             }
 
 

@@ -31,12 +31,5 @@ public class ODEIntegrator{
         stepHandler.update(x,t);
 
     }
-
-//    //@Override
-//    public double f(double x, double t) {
-//        Argument xPars = new Argument("x", x);
-//        Argument tPars = new Argument("t", t);
-//        Expression e = new Expression(this.odeString, xPars, tPars);
-//        return e.calculate();
-//    }
+    
 }
